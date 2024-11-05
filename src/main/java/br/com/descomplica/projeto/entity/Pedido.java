@@ -21,7 +21,7 @@ public class Pedido {
 	private Integer pedidoId;
 	
 	@Column(name = "pedido_data")
-	private Date data;
+	private Date pedidoData;
 	
 	
 	@ManyToMany
@@ -38,13 +38,16 @@ public class Pedido {
 	}
 
 
-	public Date getData() {
-		return data;
+	
+
+
+	public Date getPedidoData() {
+		return pedidoData;
 	}
 
 
-	public void setData(Date data) {
-		this.data = data;
+	public void setPedidoData(Date pedidoData) {
+		this.pedidoData = pedidoData;
 	}
 
 
