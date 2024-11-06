@@ -37,7 +37,7 @@ public class CategoriaService {
 
 	}
 
-	public Boolean deeteCategoria(Integer id) {
+	public Boolean deleteCategoria(Integer id) {
 		Categoria categoria = categoriaRepository.findById(id).orElse(null);
 		if (categoria != null) {
 			categoriaRepository.delete(categoria);

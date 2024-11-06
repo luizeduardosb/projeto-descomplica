@@ -25,7 +25,7 @@ public class Produto {
 	private Integer produtoId;
 	
 	@Column(name = "produto_nome")
-	private String ProdutoNome;
+	private String produtoNome;
 	
 	
 	@ManyToOne
@@ -49,11 +49,11 @@ public class Produto {
 	}
 
 	public String getProdutoNome() {
-		return ProdutoNome;
+		return produtoNome;
 	}
 
 	public void setProdutoNome(String produtoNome) {
-		ProdutoNome = produtoNome;
+		this.produtoNome = produtoNome;
 	}
 
 	public Categoria getCategoria() {

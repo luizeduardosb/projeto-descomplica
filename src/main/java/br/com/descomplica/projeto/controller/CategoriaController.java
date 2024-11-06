@@ -60,7 +60,7 @@ public class CategoriaController {
 	
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Boolean> deleteCategoria(@PathVariable Integer id) {
-		if (categoriaService.deeteCategoria(id)) {
+		if (categoriaService.deleteCategoria(id)) {
 			return new ResponseEntity<>(true, HttpStatus.OK);
 		} else {
 			return new ResponseEntity<>(false, HttpStatus.OK);

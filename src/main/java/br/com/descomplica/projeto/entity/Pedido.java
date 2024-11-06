@@ -1,6 +1,6 @@
 package br.com.descomplica.projeto.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 import jakarta.persistence.Column;
@@ -21,7 +21,7 @@ public class Pedido {
 	private Integer pedidoId;
 	
 	@Column(name = "pedido_data")
-	private Date pedidoData;
+	private LocalDate pedidoData;
 	
 	
 	@ManyToMany
@@ -37,16 +37,12 @@ public class Pedido {
 		this.pedidoId = pedidoId;
 	}
 
-
-	
-
-
-	public Date getPedidoData() {
+	public LocalDate getPedidoData() {
 		return pedidoData;
 	}
 
 
-	public void setPedidoData(Date pedidoData) {
+	public void setPedidoData(LocalDate pedidoData) {
 		this.pedidoData = pedidoData;
 	}
 

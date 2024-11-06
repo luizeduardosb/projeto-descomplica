@@ -35,7 +35,7 @@ public class ProdutoController {
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Produto> getById(Integer id) {
+	public ResponseEntity<Produto> getById(@PathVariable Integer id) {
 		Produto produto = produtoService.getById(id);
 		if (produto != null) {
 			return new ResponseEntity<>(produto, HttpStatus.OK);

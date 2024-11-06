@@ -42,7 +42,7 @@ public class ProdutoService {
 			produtoRepository.delete(produto);
 			return true;
 		} else { 
-			return null;
+			return false;
 		}
 		
 	}
